@@ -30,24 +30,40 @@ if (1)
 {
     //output another frequency
     for(i=0;i<200;i++)
-      PlaySound(1000-i, 8);
+      PlaySound(1000-i, 5);
     for(i=200; i > 0; i--)
       PlaySound(1000-i, 5);
     for(i=0;i<200;i++)
-      PlaySound(1000-i, 8);
+      PlaySound(1000-i, 5);
     for(i=200; i > 0; i--)
       PlaySound(1000-i, 5); 
 }
 if (1)
-{
-    PlaySound(800, 100);
-    PlaySound(900, 100);
-    PlaySound(800, 100);
-    PlaySound(900, 100);
-    PlaySound(800, 100);
-    PlaySound(900, 100);
-    PlaySound(800, 100);
-    PlaySound(900, 100);
+{    //output another frequency
+    for(i=0;i<100;i++)
+      PlaySound(500-i, 2);
+    for(i=100; i > 0; i--)
+      PlaySound(500-i, 2);
+    for(i=0;i<100;i++)
+      PlaySound(500-i, 2);
+    for(i=100; i > 0; i--)
+      PlaySound(500-i, 2); 
+    for(i=0;i<100;i++)
+      PlaySound(500-i, 2);
+    for(i=100; i > 0; i--)
+      PlaySound(500-i, 2);
+    for(i=0;i<100;i++)
+      PlaySound(500-i, 2);
+    for(i=100; i > 0; i--)
+      PlaySound(500-i, 2);
+    for(i=0;i<100;i++)
+      PlaySound(500-i, 2);
+    for(i=100; i > 0; i--)
+      PlaySound(500-i, 2);
+    for(i=0;i<100;i++)
+      PlaySound(500-i, 2);
+    for(i=100; i > 0; i--)
+      PlaySound(500-i, 2);
 }
 if (1)
 {  
