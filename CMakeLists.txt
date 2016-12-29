@@ -17,13 +17,9 @@ set(ARDUINO_DEFAULT_SERIAL picocom @SERIAL_PORT@)
 FILE(GLOB files RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "*")
 
 FOREACH(infileName ${files})
-    MESSAGE(STATUS "Process ino: ${infileName}")
-
     IF (EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/${infileName}/${infileName}.ino")
-        MESSAGE(STATUS "Sketch: ${infileName}")
         generate_arduino_firmware(${infileName} SKETCH "${infileName}")
-        add_custom_target(${infileName}.build DEPENDS ${infileName})
-        add_custom_target(${infileName}.install DEPENDS ${infileName}-upload)
+        add_custom_target(${infileName}.o DEPENDS ${infileName})
     ENDIF()
 ENDFOREACH(infileName)
 
